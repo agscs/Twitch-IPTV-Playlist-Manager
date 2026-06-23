@@ -37,9 +37,9 @@ Copy the project folder to your local web server:
 - **Laragon:** Place the folder in `C:\laragon\www\Twitch-IPTV`
 - **XAMPP:** Place the folder in `C:\xampp\htdocs\Twitch-IPTV`
 
-Open your web browser and navigate to the dashboard (e.g., `http://localhost/Twitch-IPTV/` or `http://192.168.1.15/Twitch-IPTV/`).
+Open your web browser and navigate to the dashboard (e.g., `http://localhost/Twitch-IPTV/` or `http://127.0.0.1/Twitch-IPTV/`).
 
-Ensure the `storage/` directory has write permissions so the script can write settings and channel lists.
+Ensure the `storage/` directory has write permissions so the script can write settings and channel lists. On the first run, the application will automatically create `storage/settings.json` and `storage/channels.json` from the `.example` templates.
 
 ---
 
@@ -73,19 +73,19 @@ Copy these URLs into your IPTV player (such as Tivimate, VLC, Kodi, or OTT Navig
 ### 1. Live Dynamic Playlist (Recommended for local hosting)
 Fetches and updates stream links on-the-fly:
 ```bash
-http://your-server-ip/Twitch-IPTV/playlist.php
+http://localhost/Twitch-IPTV/playlist.php
 ```
 
 ### 2. Static Cached Playlist (Loads instantly)
 Pre-built static file. Updates whenever you save changes on the dashboard:
 ```bash
-http://your-server-ip/Twitch-IPTV/playlist.m3u
+http://localhost/Twitch-IPTV/playlist.m3u
 ```
 
 ### 3. XMLTV Electronic Program Guide (EPG)
 EPG guide showing current stream titles and game info:
 ```bash
-http://your-server-ip/Twitch-IPTV/epg.php
+http://localhost/Twitch-IPTV/epg.php
 ```
 
 ---
