@@ -1,0 +1,25 @@
+# Local / Generated playlist files
+playlist.m3u
+
+# Ignore all storage contents except .gitkeep and the template examples
+/storage/*
+!/storage/.gitkeep
+!/storage/settings.json.example
+!/storage/channels.json.example
+
+# Ignore cache files and directories ending in _cache
+*_cache/
+*_cache
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor configuration folders
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

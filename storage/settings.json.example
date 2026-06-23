@@ -1,0 +1,11 @@
+{
+    "stream_quality": "1080p",
+    "twitch_creds": {
+        "client_id": "",
+        "client_secret": "",
+        "access_token": "",
+        "refresh_token": "",
+        "user_id": "",
+        "username": ""
+    }
+}
